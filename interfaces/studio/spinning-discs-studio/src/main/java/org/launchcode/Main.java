@@ -18,5 +18,11 @@ public class Main {
         myCd.writeDataUsingLaser();
         myDvd.startPlaying();
 
+        //--throw error--//
+        try {
+            throw new Error("Bad.");
+        } catch(Error e){
+            e.printStackTrace();
+        }
     }
 }
